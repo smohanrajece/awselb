@@ -1,0 +1,48 @@
+myserver01:
+******************
+
+#!/bin/bash
+# Update Packages
+sudo apt-get upate -y
+# install Apache
+sudo apt-get install -y apache2
+# Start Apache service
+sudo systemctl start apache2
+# Enable Apache service
+sudo systemctl enable apache2
+# Modify index.html file
+sudo echo "<h1>Welcome to AWS EC2</h1>" > /var/www/html/index.html
+sudo echo "<p>My Name is Mohan</p>" >> /var/www/html/index.html
+
+*************************************************************************
+myserver02:
+******************
+
+#!/bin/bash
+# Update Packages
+sudo apt-get upate -y
+# install Apache
+sudo apt-get install -y apache2
+# Start Apache service
+sudo systemctl start apache2
+# Enable Apache service
+sudo systemctl enable apache2
+# Modify index.html file
+sudo echo "<h1>Welcome to AWS EC2</h1>" > /var/www/html/index.html
+sudo echo "<p>TrainWithShubham Community is Super Awesome :)</p>" >> /var/www/html/index.html
+
+*****************************************************************************************************
+
+ALB:
+https://medium.com/@ajitfawade/how-to-set-up-an-application-load-balancer-with-aws-ec2-day-41-of-90-days-of-devops-30542b5deaa4
+
+https://medium.com/@ailneniniveditha/elastic-load-balancer-f6a6b1970bde
+
+https://medium.com/@neupaneakrur11/aws-ec2-high-availability-using-alb-asg-multiple-az-49f83e7572ae
+
+Docker:
+https://medium.com/@younusraza909/docker-secrets-beginners-guide-73f0b60764aa
+
+
+aws 30 days :
+https://medium.com/@navya.cloudops/aws-in-30-days-73fefcaa8aa2
